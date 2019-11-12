@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VoiceComponent } from './voice/voice.component';
+import { VoiceService } from './service/voice.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { VoiceComponent } from './voice/voice.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [VoiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
